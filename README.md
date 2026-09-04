@@ -16,14 +16,6 @@ Finger vein patterns are internal biometrics, making them virtually impossible t
 
 ---
 
-## 📸 System Preview & Preprocessing Stages
-
-Here is how VeinGuard processes raw infrared finger vein scans into clean biometric features:
-
-![Preprocessing Stages](docs/preprocessing_stages.png)
-
----
-
 ## 🛠️ Step-by-Step Setup & Installation
 
 ### Prerequisites
@@ -41,12 +33,7 @@ cd Finger_Vein_Authentication
   python -m venv venv
   .\venv\Scripts\Activate.ps1
   ```
-- **On Linux / macOS:**
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate
-  ```
-
+  
 ### Step 3: Install Required Packages
 Install all project dependencies with one command:
 ```bash
@@ -56,10 +43,6 @@ pip install -r requirements.txt
 ### Step 4: Configure Environment (Optional)
 Create your local environment file:
 - **On Windows:** `copy .env.example .env`
-- **On Linux/macOS:** `cp .env.example .env`
-
-*(Default settings run on SQLite database on port `5000` automatically.)*
-
 ---
 
 ## 🚀 How to Run and Walk Through the Project
@@ -92,20 +75,6 @@ When you open the web application in your browser, you can explore 3 main featur
 3. **📊 Live System Stats & Auth Logs:**
    - View real-time security statistics (Total Enrolled Users, Verifications, Acceptance Rate).
    - Inspect recent authentication logs with timestamps, matched IDs, and confidence scores.
-
----
-
-### 3️⃣ Running Optional Training & Analytics Scripts
-
-VeinGuard includes simple command-line tools to train, test, and analyze the system:
-
-| Task | Command | What It Does | Main Output |
-| :--- | :--- | :--- | :--- |
-| **Train AI Model** | `python training/train.py` | Retrains the CNN model on finger vein dataset splits. | `models/vein_cnn_base.keras` |
-| **Evaluate Accuracy** | `python training/evaluate.py` | Calculates accuracy, precision, recall, & F1-score. | `metrics.txt` & `docs/confusion_matrix.png` |
-| **Generate Graphs** | `python training/plot_graphs.py` | Plots biometric FAR, FRR, & Equal Error Rate (EER). | `docs/performance_curves.png` |
-| **Visualize Steps** | `python preprocessing/visualize.py` | Generates a 5-stage image enhancement breakdown. | `docs/preprocessing_stages.png` |
-
 ---
 
 ## 📁 Project Structure Quick Map
