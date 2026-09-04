@@ -1,4 +1,4 @@
-# 🩸 VeinGuard — Finger Vein Detection Authentication System
+# Finger Vein Detection and Authentication System using CNN
 
 **VeinGuard** is an intelligent, high-security finger vein recognition system. It scans unique vascular patterns beneath the skin to verify identity in real time using Deep Learning and Computer Vision, complete with an easy-to-use web dashboard.
 
