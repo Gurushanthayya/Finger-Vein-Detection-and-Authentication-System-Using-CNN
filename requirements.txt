@@ -1,0 +1,21 @@
+# Web Application & Production WSGI Servers
+flask>=2.3.0
+gunicorn>=21.2.0
+waitress>=3.0.0
+
+# Deep Learning & Machine Learning
+tensorflow>=2.10.0
+keras>=3.0.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+
+# Computer Vision & Image Processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Data Visualization
+matplotlib>=3.7.0
+
+# Database & Environment Configuration
+mysql-connector-python>=8.3.0
+python-dotenv>=1.0.0
